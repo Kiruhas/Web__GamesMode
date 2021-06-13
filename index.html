@@ -4,47 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GamesMode</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="assets/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="menu">
-          <img src="img/logo.png" alt="logo: GamesMode" class="logo__img" />
+          <img src="assets/img/logo.png" alt="logo: GamesMode" class="logo__img" />
+
           <ul class="menu__list">
             <li class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Home"></use>
+                <use xlink:href="assets/img/icons.svg#Home"></use>
               </svg>
               <div class="item__name">Home</div>
             </li>
             <li class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Store"></use>
+                <use xlink:href="assets/img/icons.svg#Store"></use>
               </svg>
               <div class="item__name">Store</div>
             </li>
             <li class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Library"></use>
+                <use xlink:href="assets/img/icons.svg#Library"></use>
               </svg>
               <div class="item__name">Library</div>
             </li>
             <li class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Friends"></use>
+                <use xlink:href="assets/img/icons.svg#Friends"></use>
               </svg>
               <div class="item__name">Friends</div>
             </li>
             <li class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Live"></use>
+                <use xlink:href="assets/img/icons.svg#Live"></use>
               </svg>
               <div class="item__name">Live</div>
             </li>
@@ -55,29 +67,33 @@
           <ul class="menu__list">
             <a href="#" class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Downloads"></use>
+                <use xlink:href="assets/img/icons.svg#Downloads"></use>
               </svg>
               <div class="item__name">Downloads</div>
             </a>
             <a href="#" class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Settings"></use>
+                <use xlink:href="assets/img/icons.svg#Settings"></use>
               </svg>
               <div class="item__name">Settings</div>
             </a>
             <a href="#" class="list__item">
               <svg class="item__icon">
-                <use xlink:href="img/icons.svg#Live"></use>
+                <use xlink:href="assets/img/icons.svg#Live"></use>
               </svg>
               <div class="item__name">Kiruhas</div>
             </a>
           </ul>
         </div>
         <!-- /.menu__footer -->
+        <button class="nav__close">&times;</button>
       </div>
       <!-- /.nav -->
       <div class="content">
         <div class="header">
+          <button class="nav__open">
+            <img src="assets/img/menu.svg" alt="icon: menu" class="nav__open__icon" />
+          </button>
           <div class="catalog__menu">
             <div class="catalog__menu__item item__active">Discover</div>
             <div class="catalog__menu__item">Browse</div>
@@ -85,11 +101,11 @@
           </div>
           <div class="search">
             <svg class="notify__icon">
-              <use xlink:href="img/icons.svg#Notify"></use>
+              <use xlink:href="assets/img/icons.svg#Notify"></use>
             </svg>
             <div class="search__panel">
               <svg class="search__icon">
-                <use xlink:href="img/icons.svg#Search"></use>
+                <use xlink:href="assets/img/icons.svg#Search"></use>
               </svg>
               <input type="text" placeholder="Search" class="search__text" />
             </div>
@@ -97,7 +113,7 @@
         </div>
         <div class="primary__games">
           <div class="poster">
-            <img src="img/poster_game.jpg" alt="photo: game name" class="poster__image" />
+            <img src="assets/img/poster_game.jpg" alt="photo: game name" class="poster__image" />
             <span class="primary__game__name">Fortnite</span>
             <div class="primary__game__text">
               <div class="primary__game__update">
@@ -109,7 +125,7 @@
               <button class="primary__game__play">
                 <span class="game__play__text">Play for free</span>
                 <svg class="game__play__icon">
-                  <use xlink:href="img/icons.svg#Arrow_play"></use>
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
                 </svg>
               </button>
             </div>
@@ -117,57 +133,57 @@
           </div>
           <ul class="primary__games__list">
             <li class="games__list__item primary__game__active">
-              <img src="img/fortnite.png" alt="" class="list__item__image" />
+              <img src="assets/img/fortnite.png" alt="" class="list__item__image" />
               <span class="list__item__title">Fortnite</span>
             </li>
             <li class="games__list__item">
-              <img src="img/rocket_league.png" alt="" class="list__item__image" />
+              <img src="assets/img/rocket_league.png" alt="" class="list__item__image" />
               <span class="list__item__title">Rocket League®</span>
             </li>
             <li class="games__list__item">
-              <img src="img/the_escapists_2.png" alt="" class="list__item__image" />
+              <img src="assets/img/the_escapists_2.png" alt="" class="list__item__image" />
               <span class="list__item__title">The Escapists 2</span>
             </li>
             <li class="games__list__item">
-              <img src="img/the_long_dark.png" alt="" class="list__item__image" />
+              <img src="assets/img/the_long_dark.png" alt="" class="list__item__image" />
               <span class="list__item__title">The Long Dark</span>
             </li>
             <li class="games__list__item">
-              <img src="img/yakuza.png" alt="" class="list__item__image" />
+              <img src="assets/img/yakuza.png" alt="" class="list__item__image" />
               <span class="list__item__title">Yakuza: Like a Dragon</span>
             </li>
             <li class="games__list__item">
-              <img src="img/warhammer.png" alt="" class="list__item__image" />
+              <img src="assets/img/warhammer.png" alt="" class="list__item__image" />
               <span class="list__item__title">Warhammer: Vermintide 2</span>
             </li>
           </ul>
         </div>
         <!-- /.primary__games -->
-        <div class="sale__games">
+        <div id="js-carousel-1" class="sale__games">
           <div class="sale__games__header">
             <span class="games__header__title">Games On Sale</span>
             <div class="games__header__arrows">
-              <button class="header__arrow__button">
-                <svg class="header__arrow">
-                  <use xlink:href="img/icons.svg#Arrow-left"></use>
+              <button class="header__arrow__button js-prev">
+                <svg class="header__arrow arrow__active">
+                  <use xlink:href="assets/img/icons.svg#Arrow-left"></use>
                 </svg>
               </button>
-              <button class="header__arrow__button">
+              <button class="header__arrow__button js-next">
                 <svg class="header__arrow arrow__active">
-                  <use xlink:href="img/icons.svg#Arrow-right"></use>
+                  <use xlink:href="assets/img/icons.svg#Arrow-right"></use>
                 </svg>
               </button>
             </div>
           </div>
-          <div class="sale__games__carousel">
-            <div class="games__carousel__item">
-              <img src="img/valheim.png" alt="" class="carousel__item__image" />
+          <div class="sale__games__carousel owl-carousel">
+            <div class="games__carousel__item carousel-item">
+              <img src="assets/img/valheim.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Valheim</div>
               <div class="carousel__item__author">Action Games</div>
               <div class="carousel__item__price">$8.15</div>
             </div>
-            <div class="games__carousel__item">
-              <img src="img/bioshock.png" alt="" class="carousel__item__image" />
+            <div class="games__carousel__item carousel-item">
+              <img src="assets/img/bioshock.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">BIOSHOCK: THE COLLEC...</div>
               <div class="carousel__item__author">Action, RPG</div>
               <div class="carousel__item__price__sale">
@@ -176,14 +192,14 @@
                 <div class="price__sale__new">$8.67</div>
               </div>
             </div>
-            <div class="games__carousel__item">
-              <img src="img/unravel.png" alt="" class="carousel__item__image" />
+            <div class="games__carousel__item carousel-item">
+              <img src="assets/img/unravel.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Unravel Two</div>
               <div class="carousel__item__author">Adventure Games</div>
               <div class="carousel__item__price">$20.38</div>
             </div>
-            <div class="games__carousel__item">
-              <img src="img/tick-tock.png" alt="" class="carousel__item__image" />
+            <div class="games__carousel__item carousel-item">
+              <img src="assets/img/tick-tock.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Tick Tock: A Tale for Two</div>
               <div class="carousel__item__author">Indie Games</div>
               <div class="carousel__item__price__sale">
@@ -192,8 +208,8 @@
                 <div class="price__sale__new">$1.39</div>
               </div>
             </div>
-            <div class="games__carousel__item">
-              <img src="img/hitman.png" alt="" class="carousel__item__image" />
+            <div class="games__carousel__item carousel-item">
+              <img src="assets/img/hitman.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">HITMAN 3</div>
               <div class="carousel__item__author">Action Games</div>
               <div class="carousel__item__price">$23.99</div>
@@ -205,5 +221,6 @@
       <!-- /.content -->
     </div>
     <!-- /.container -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
