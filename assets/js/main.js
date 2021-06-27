@@ -51,4 +51,8 @@ $('.list__item__button').on('click', function() {
   var id = $(this).attr('poster_id');
   $('.poster').addClass('hidden');
   $('#' + id).removeClass('hidden');
+  $('.games__list__item').each(function(){
+    $(this).removeClass('primary__game__active');
+  })
+  $(this).parents('.games__list__item').addClass('primary__game__active');
 });
