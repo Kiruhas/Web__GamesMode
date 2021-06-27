@@ -22,19 +22,22 @@ body {
 
 .logo__img {
   display: block;
-  margin: 60px auto 56px;
+  margin: 33px auto 56px;
+  padding: 0 5px;
 }
 
 .menu__list {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .list__item {
   display: flex;
   vertical-align: middle;
   padding: 12px 16px;
-  margin: 0 12px;
+  margin: 0 auto;
+  max-width: 150px;
   border-radius: 12px;
   text-decoration: none;
   color: rgba(235, 235, 245, 0.6);
@@ -69,7 +72,7 @@ body {
 
 .content {
   width: 80%;
-  padding: 60px 48px 20px 24px;
+  padding: 30px 48px 20px 24px;
 }
 
 .header {
@@ -277,23 +280,28 @@ body {
   margin-left: 4px;
 }
 
-.games__list__item {
+.list__item__button {
+  color: none;
   display: flex;
   align-items: center;
-  padding: 4px 12px 6px;
   cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 4px 12px 6px;
+  width: 100%;
   transition: background-color 0.15s linear;
 }
 
-.games__list__item:first-of-type {
+.games__list__item:first-of-type .list__item__button {
   border-radius: 0px 12px 0px 0px;
 }
 
-.games__list__item:last-of-type {
+.games__list__item:last-of-type .list__item__button {
   border-radius: 0px 0px 12px 0px;
 }
 
-.games__list__item:hover {
+.list__item__button:hover {
   background-color: #2b2727;
 }
 
@@ -308,6 +316,10 @@ body {
   background-color: #ffffff;
   height: 0.5px;
   width: 60%;
+}
+
+.hidden {
+  display: none;
 }
 
 .list__item__title {
@@ -381,6 +393,16 @@ body {
 .games__carousel__item {
   height: 370px;
   width: 204px;
+  background-color: inherit;
+  border-radius: 8px;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s linear;
+}
+
+.games__carousel__item:hover {
+  background-color: #2b2727;
 }
 
 .carousel__item__image {
@@ -472,7 +494,15 @@ body {
   }
 
   .games__list__item {
-    width: 30%;
+    width: 33%;
+  }
+
+  .games__list__item:first-of-type .list__item__button {
+    border-radius: 0px;
+  }
+
+  .games__list__item:nth-of-type(4) .list__item__button {
+    border-radius: 0px 0px 0px 12px;
   }
 
   .poster__image {
@@ -494,11 +524,28 @@ body {
 
 @media (max-width: 1056px) {
   .games__list__item {
-    width: 45%;
+    width: 49%;
+  }
+
+  .games__list__item:nth-of-type(5) .list__item__button {
+    border-radius: 0px 0px 0px 12px;
+  }
+
+  .games__list__item:nth-of-type(4) .list__item__button {
+    border-radius: 0px;
   }
 
   .content {
     width: 70%;
+    padding-top: 30px;
+  }
+
+  .item__icon {
+    margin-left: 5px;
+  }
+
+  .logo__img {
+    margin-top: 33px;
   }
 
   .primary__game__name {
@@ -523,14 +570,34 @@ body {
     margin-right: 8px;
   }
 }
+@media (max-width: 856px) {
+  .games__list__item {
+    width: 100%;
+  }
+  .games__list__item:last-of-type .list__item__button {
+    border-radius: 0px 0px 12px 12px;
+  }
+}
 
 @media (max-width: 756px) {
-  .games__list__item {
-    width: 90%;
-  }
   .content {
     width: 90%;
+    padding-top: 10px;
   }
+
+  .logo__img {
+    margin-top: 13px;
+  }
+
+  .primary__games,
+  .sale__games {
+    margin-top: 20px;
+  }
+
+  .menu__footer {
+    margin-top: 10px;
+  }
+
   .nav {
     position: fixed;
     left: 0;

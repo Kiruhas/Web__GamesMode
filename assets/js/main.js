@@ -46,3 +46,9 @@ $('#js-carousel-1').each(function () {
     owl.trigger('next.owl.carousel');
   });
 });
+
+$('.list__item__button').on('click', function() {
+  var id = $(this).attr('poster_id');
+  $('.poster').addClass('hidden');
+  $('#' + id).removeClass('hidden');
+});

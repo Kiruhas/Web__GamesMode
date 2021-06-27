@@ -112,9 +112,128 @@
           </div>
         </div>
         <div class="primary__games">
-          <div class="poster">
-            <img src="assets/img/poster_game.jpg" alt="photo: game name" class="poster__image" />
+          <div class="poster" id="poster_1">
+            <img
+              src="assets/img/posters/poster_game_fortnite.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
             <span class="primary__game__name">Fortnite</span>
+            <div class="primary__game__text">
+              <div class="primary__game__update">
+                <div class="game__update__text">Update</div>
+                <span class="game__update__name">
+                  The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.
+                </span>
+              </div>
+              <button class="primary__game__play">
+                <span class="game__play__text">Play for free</span>
+                <svg class="game__play__icon">
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="primary__game__shadow"></div>
+          </div>
+          <div class="poster hidden" id="poster_2">
+            <img
+              src="assets/img/posters/poster_game_rocket.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
+            <span class="primary__game__name">Rocket League</span>
+            <div class="primary__game__text">
+              <div class="primary__game__update">
+                <div class="game__update__text">Update</div>
+                <span class="game__update__name">
+                  The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.
+                </span>
+              </div>
+              <button class="primary__game__play">
+                <span class="game__play__text">Play for free</span>
+                <svg class="game__play__icon">
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="primary__game__shadow"></div>
+          </div>
+          <div class="poster hidden" id="poster_3">
+            <img
+              src="assets/img/posters/poster_game_escapists.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
+            <span class="primary__game__name">The Escapists 2</span>
+            <div class="primary__game__text">
+              <div class="primary__game__update">
+                <div class="game__update__text">Update</div>
+                <span class="game__update__name">
+                  The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.
+                </span>
+              </div>
+              <button class="primary__game__play">
+                <span class="game__play__text">Play for free</span>
+                <svg class="game__play__icon">
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="primary__game__shadow"></div>
+          </div>
+          <div class="poster hidden" id="poster_4">
+            <img
+              src="assets/img/posters/poster_game_longdark.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
+            <span class="primary__game__name">The Long Dark</span>
+            <div class="primary__game__text">
+              <div class="primary__game__update">
+                <div class="game__update__text">Update</div>
+                <span class="game__update__name">
+                  The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.
+                </span>
+              </div>
+              <button class="primary__game__play">
+                <span class="game__play__text">Play for free</span>
+                <svg class="game__play__icon">
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="primary__game__shadow"></div>
+          </div>
+          <div class="poster hidden" id="poster_5">
+            <img
+              src="assets/img/posters/poster_game_yakuza.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
+            <span class="primary__game__name">Yakuza: Like a Dragon</span>
+            <div class="primary__game__text">
+              <div class="primary__game__update">
+                <div class="game__update__text">Update</div>
+                <span class="game__update__name">
+                  The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.
+                </span>
+              </div>
+              <button class="primary__game__play">
+                <span class="game__play__text">Play for free</span>
+                <svg class="game__play__icon">
+                  <use xlink:href="assets/img/icons.svg#Arrow_play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="primary__game__shadow"></div>
+          </div>
+          <div class="poster hidden" id="poster_6">
+            <img
+              src="assets/img/posters/poster_game_warhammer.jpg"
+              alt="photo: game name"
+              class="poster__image"
+            />
+            <span class="primary__game__name">Warhammer: Vermintide 2</span>
             <div class="primary__game__text">
               <div class="primary__game__update">
                 <div class="game__update__text">Update</div>
@@ -133,28 +252,40 @@
           </div>
           <ul class="primary__games__list">
             <li class="games__list__item primary__game__active">
-              <img src="assets/img/fortnite.png" alt="" class="list__item__image" />
-              <span class="list__item__title">Fortnite</span>
+              <button class="list__item__button" poster_id="poster_1">
+                <img src="assets/img/fortnite.png" alt="" class="list__item__image" />
+                <span class="list__item__title">Fortnite</span>
+              </button>
             </li>
             <li class="games__list__item">
-              <img src="assets/img/rocket_league.png" alt="" class="list__item__image" />
-              <span class="list__item__title">Rocket League®</span>
+              <button class="list__item__button" poster_id="poster_2">
+                <img src="assets/img/rocket_league.png" alt="" class="list__item__image" />
+                <span class="list__item__title">Rocket League®</span>
+              </button>
             </li>
             <li class="games__list__item">
-              <img src="assets/img/the_escapists_2.png" alt="" class="list__item__image" />
-              <span class="list__item__title">The Escapists 2</span>
+              <button class="list__item__button" poster_id="poster_3">
+                <img src="assets/img/the_escapists_2.png" alt="" class="list__item__image" />
+                <span class="list__item__title">The Escapists 2</span>
+              </button>
             </li>
             <li class="games__list__item">
-              <img src="assets/img/the_long_dark.png" alt="" class="list__item__image" />
-              <span class="list__item__title">The Long Dark</span>
+              <button class="list__item__button" poster_id="poster_4">
+                <img src="assets/img/the_long_dark.png" alt="" class="list__item__image" />
+                <span class="list__item__title">The Long Dark</span>
+              </button>
             </li>
             <li class="games__list__item">
-              <img src="assets/img/yakuza.png" alt="" class="list__item__image" />
-              <span class="list__item__title">Yakuza: Like a Dragon</span>
+              <button class="list__item__button" poster_id="poster_5">
+                <img src="assets/img/yakuza.png" alt="" class="list__item__image" />
+                <span class="list__item__title">Yakuza: Like a Dragon</span>
+              </button>
             </li>
             <li class="games__list__item">
-              <img src="assets/img/warhammer.png" alt="" class="list__item__image" />
-              <span class="list__item__title">Warhammer: Vermintide 2</span>
+              <button class="list__item__button" poster_id="poster_6">
+                <img src="assets/img/warhammer.png" alt="" class="list__item__image" />
+                <span class="list__item__title">Warhammer: Vermintide 2</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -176,13 +307,13 @@
             </div>
           </div>
           <div class="sale__games__carousel owl-carousel">
-            <div class="games__carousel__item carousel-item">
+            <button class="games__carousel__item carousel-item">
               <img src="assets/img/valheim.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Valheim</div>
               <div class="carousel__item__author">Action Games</div>
               <div class="carousel__item__price">$8.15</div>
-            </div>
-            <div class="games__carousel__item carousel-item">
+            </button>
+            <button class="games__carousel__item carousel-item">
               <img src="assets/img/bioshock.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">BIOSHOCK: THE COLLEC...</div>
               <div class="carousel__item__author">Action, RPG</div>
@@ -191,14 +322,14 @@
                 <div class="price__sale__last">$50</div>
                 <div class="price__sale__new">$8.67</div>
               </div>
-            </div>
-            <div class="games__carousel__item carousel-item">
+            </button>
+            <button class="games__carousel__item carousel-item">
               <img src="assets/img/unravel.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Unravel Two</div>
               <div class="carousel__item__author">Adventure Games</div>
               <div class="carousel__item__price">$20.38</div>
-            </div>
-            <div class="games__carousel__item carousel-item">
+            </button>
+            <button class="games__carousel__item carousel-item">
               <img src="assets/img/tick-tock.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">Tick Tock: A Tale for Two</div>
               <div class="carousel__item__author">Indie Games</div>
@@ -207,13 +338,13 @@
                 <div class="price__sale__last">$3.47</div>
                 <div class="price__sale__new">$1.39</div>
               </div>
-            </div>
-            <div class="games__carousel__item carousel-item">
+            </button>
+            <button class="games__carousel__item carousel-item">
               <img src="assets/img/hitman.png" alt="" class="carousel__item__image" />
               <div class="carousel__item__title">HITMAN 3</div>
               <div class="carousel__item__author">Action Games</div>
               <div class="carousel__item__price">$23.99</div>
-            </div>
+            </button>
           </div>
         </div>
         <!-- /.sale__games -->
